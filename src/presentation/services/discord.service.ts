@@ -10,6 +10,13 @@ export class DiscordService {
 
     const body = {
       content: message,
+      embeds: [
+        {
+          image: {
+            url: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2h1OGF1dDNyd25jNzBxZmNvY2N6cDBpc3FxaGF4bDJiMWRxeHU1diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZqlvCTNHpqrio/giphy.gif'
+          }
+        },
+      ],
     }
 
     const response = await fetch(this.discordWebhookUrl, {
